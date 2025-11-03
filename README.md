@@ -10,23 +10,21 @@ The course is split across two intensive days: Day 1 builds foundations and core
 
 ### Session 1: Introduction to Gaussian Processes and PyMC
 
-- GPs as functions
-- Prior and posterior
-- Manual kernels
-- Covariance matrices
+- Bayesian non-parametric models
+- Mulitvariate normal to Gaussian process
+- Gaussian proceess prior
+- Mean functions and covariance functions
 - PyMC basics
-- Marginal vs Latent
-- Posterior predictive checks
+- Model checking
 
 ### Session 2: Kernels, Likelihoods, and Model Building
 
+- Marginal likelihood
 - Kernel families
 - Kernel composition
+- Latent GP
 - Additive models
-- Marginal vs Latent
 - Non-Gaussian likelihoods
-- Inference trade-offs
-- T-process robustness
 
 
 ## Day 2
@@ -34,21 +32,16 @@ The course is split across two intensive days: Day 1 builds foundations and core
 ### Session 3: Scaling with HSGP and Sparse methods
 
 - Computational bottlenecks
+- Inducing point methods
 - HSGP theory
 - HSGP implementation
 - Choosing m and L
-- Convergence diagnostics
-- Inducing point methods
-- Multidimensional inputs
 
 ### Session 4: Case Studies, Multi-Output, and Deployment
 
-- Sports analytics case
-- Data preparation
-- Model fitting
-- LMC multi-output
+- Multidimensional inputs
+- Multi-output GP
 - Sparse multi-output
-- Model diagnostics
-- Deployment strategies
+- Sports analytics case study
 
 
