@@ -1,0 +1,11 @@
+# pixi environments
+.pixi/*
+!.pixi/config.toml
+
+CLAUDE.md
+WARP.md
+GEMINI.md
+
+reference/
+archive/
+datasets/

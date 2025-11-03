@@ -1,0 +1,21 @@
+[workspace]
+authors = ["Chris Fonnesbeck <fonnesbeck@gmail.com>"]
+channels = ["conda-forge"]
+name = "instats_gp"
+platforms = ["linux-64"]
+version = "0.1.0"
+
+[tasks]
+
+[dependencies]
+marimo = ">=0.17.5,<0.18"
+pymc = ">=5.26.1,<6"
+watchdog = ">=6.0.0,<7"
+plotly = ">=6.3.1,<7"
+polars = ">=1.35.1,<2"
+ipykernel = ">=7.1.0,<8"
+pip = ">=25.2,<26"
+nbformat = ">=5.10.4,<6"
+ipywidgets = ">=8.1.8,<9"
+numba = ">=0.62.1,<0.63"
+nutpie = ">=0.16.2,<0.17"
