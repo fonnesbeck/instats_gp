@@ -6,6 +6,76 @@ Gaussian processes are a cornerstone of flexible, probabilistic modeling in fiel
 
 The course is split across two intensive days: Day 1 builds foundations and core implementations (GP theory, manual kernels, PyMC GP primitives, marginal vs latent formulations, and inference choices), while Day 2 focuses on scaling and applied workflows (HSGP spectral approximations, sparse methods, multi-output models, and real-world case studies such as sports analytics). Through live coding, curated notebooks adapted from the pymc-examples gallery, short exercises, and comparative demonstrations (NUTS vs VI vs MAP; exact GP vs HSGP), participants will acquire immediate, research-ready skills applicable to complex datasets and computational constraints commonly encountered in academic projects.
 
+## Environment Setup
+
+### Installing Dependencies
+
+We recommend using **pixi** for environment management, as it provides fast, reproducible dependency resolution and is configured for this repository via `pixi.toml`. However, conda/mamba instructions are also provided as an alternative.
+
+#### Option 1: Pixi (Recommended)
+
+Install pixi following the instructions at [https://pixi.sh](https://pixi.sh), then:
+
+```bash
+# Clone the repository
+git clone https://github.com/fonnesbeck/instats_gp.git
+cd instats_gp
+
+# Install all dependencies
+pixi install
+
+# Activate the environment
+pixi shell
+```
+
+To verify the installation:
+
+```bash
+python --version  # Should be 3.13+
+python -c "import pymc; print(pymc.__version__)"  # Should be 5.26+
+```
+
+#### Option 2: Conda/Mamba
+
+If you prefer using conda or mamba:
+
+```bash
+# Create environment from environment.yml
+conda env create -f environment.yml
+
+# Activate the environment
+conda activate instats_gp
+
+# Verify installation
+python --version
+python -c "import pymc; print(pymc.__version__)"
+```
+
+### IDE Setup for LLM-Assisted Exercises
+
+The workshop includes hands-on exercises designed to be completed with LLM assistance for coding support. You will need either **VSCode** or **Cursor** installed to work with the Jupyter notebooks effectively.
+
+#### Required Extensions
+
+Install the following extensions in VSCode/Cursor:
+
+1. **Jupyter** - Microsoft's official Jupyter extension for running notebooks
+2. **Python** - Microsoft's Python language support and debugging
+3. **Pixi Code** - Pixi environment integration (if using pixi)
+
+If you want to use Claude Code, Gemini, or another external LLM tool, ensure you have the respective extensions installed as well.
+
+To install extensions:
+- Open the Extensions view (Ctrl+Shift+X / Cmd+Shift+X)
+- Search for each extension by name
+- Click "Install"
+
+Once installed, you can open and run the workshop notebooks directly in your IDE with full LLM-assisted coding support.
+
+#### Colab
+
+If you prefer to use Google Colab, each session notebook includes a badge at the top that allows you to open it directly in Colab. Note that LLM-assisted exercises may require additional setup depending on your chosen LLM tool.
+
 ## Day 1
 
 ### Session 1: Introduction to Gaussian Processes and PyMC
