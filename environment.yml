@@ -17,6 +17,7 @@ dependencies:
   - ipywidgets>=8.1.8,<9
   - numba>=0.62.1,<0.63
   - nutpie>=0.16.2,<0.17
+  - scikit-learn>=1.7.2,<2
 
   # Additional dependencies (implicitly included via pymc but explicit for clarity)
   # These will be automatically resolved by conda:
