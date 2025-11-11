@@ -81,37 +81,45 @@ If you prefer to use Google Colab, each session notebook includes a badge at the
 ### Session 1: Introduction to Gaussian Processes and PyMC
 
 - Bayesian non-parametric models
-- Mulitvariate normal to Gaussian process
-- Gaussian proceess prior
-- Mean functions and covariance functions
-- PyMC basics
-- Model checking
+- Bayesian inference primer (Bayes' theorem, posterior updating)
+- Introduction to PyMC with real data (baseball launch angles)
+- Multivariate normal models with coordinates
+- From multivariate normals to Gaussian processes
+- Mean functions (zero, constant, linear)
+- Covariance functions (ExpQuad, Matérn family, Periodic)
 
 ### Session 2: Kernels, Likelihoods, and Model Building
 
-- Marginal likelihood
-- Kernel families
-- Kernel composition
-- Latent GP
-- Additive models
-- Non-Gaussian likelihoods
+- The Kernel Zoo (ExpQuad, Matérn, Rational Quadratic, Periodic, Linear)
+- Understanding kernel parameters (lengthscale, variance)
+- Marginal likelihood with `pm.gp.Marginal`
+- Latent GPs with `pm.gp.Latent`
+- Additive kernel composition (trend + seasonal)
+- Multiplicative kernel composition (locally periodic patterns)
+- Kernel properties (stationarity, isotropy, ARD)
+- Non-Gaussian likelihoods (Poisson, Student-T for robust regression)
 
 
 ## Day 2
 
 ### Session 3: Scaling with HSGP and Sparse methods
 
-- Computational bottlenecks
-- Inducing point methods
-- HSGP theory
-- HSGP implementation
-- Choosing m and L
+- Understanding computational bottlenecks
+- Sparse GP approximations with inducing points
+- Hilbert Space GP (HSGP) theory and implementation
+- 2D spatial modeling with HSGP
+- Automatic Relevance Determination (ARD)
+- Decision guide for choosing scaling methods
 
-### Session 4: Case Studies, Multi-Output, and Deployment
+### Session 4: Multi-Output GPs and Case Study
 
-- Multidimensional inputs
-- Multi-output GP
-- Sparse multi-output
-- Sports analytics case study
+- Intrinsic Coregionalization Model (ICM) for correlated outputs
+- Linear Coregionalization Model (LCM) for multiple timescales
+- Baseball pitcher spin rate analysis
+- Hierarchical logistic regression with factor models
+- Soccer player skill modeling with temporal dynamics
+- Three-timescale HSGP modeling (match-to-match, within-season, career trajectory)
+- Maximum entropy priors for lengthscale specification
+- Comprehensive case study: Separating player skill from team context
 
 
